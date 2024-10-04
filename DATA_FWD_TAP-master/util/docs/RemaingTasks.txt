@@ -1,0 +1,13 @@
+`Remaning Tasks`
+0. PIPE_ID from Command-Line_args
+1. Time Limit for the Transaction
+2. Logic for Queue Overflow
+3. Logs in the .log File Printing with Escape Sequences (due to color setup in the terminal)
+4. Three Error Codes Displayed in the Logs
+5. CTCL id is in string and we are attepting to assign it in float64 in exg_pack_lib.
+6. In the 'Fn_logoff_from_TAP' i have to create a MessageQueue for some id . now for every time i am creating the queue when we are calling this function. so do i have to destroy the queue manually if we didn't maually destroy the QUEUE. and if we delete the queue than existing messages in the queue will be goig to destroyed. (or this message will not create the queue if it is already existing.)
+7. L_MSG_TYPE in LogOnToTap
+8. Check entire MessageQueue.go . here i am using 'request_q_data' internally . fix this for LogOn and LogOff.
+
+---------------
+9 . The MessageQueue is now working as expected, but there is an issue with the message type. This problem is due to the increment in LogOn and LogOff.

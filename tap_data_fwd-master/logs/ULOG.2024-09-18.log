@@ -1,0 +1,27 @@
+[36mINFO[0m[2024-09-18 18:29:03] [main] Program main starts                   
+[36mINFO[0m[2024-09-18 18:29:03] [main] [LoadPostgreSQLConfig] PostgreSQL configuration loaded successfully 
+[36mINFO[0m[2024-09-18 18:29:03] [main] [GetDatabaseConnection] Setting up the database connection 
+[36mINFO[0m[2024-09-18 18:29:03] [main] [GetDatabaseConnection] Database connection established successfully 
+[36mINFO[0m[2024-09-18 18:29:03] [main] [GetDB] Returning the Database instance 
+[36mINFO[0m[2024-09-18 18:29:03] [cln_pack_clnt]   [Fn_bat_init] Entering Fn_bat_init 
+[36mINFO[0m[2024-09-18 18:31:02] [main] Program main starts                   
+[36mINFO[0m[2024-09-18 18:31:02] [main] [LoadPostgreSQLConfig] PostgreSQL configuration loaded successfully 
+[36mINFO[0m[2024-09-18 18:31:02] [main] [GetDatabaseConnection] Setting up the database connection 
+[36mINFO[0m[2024-09-18 18:31:02] [main] [GetDatabaseConnection] Database connection established successfully 
+[36mINFO[0m[2024-09-18 18:31:02] [main] [GetDB] Returning the Database instance 
+[36mINFO[0m[2024-09-18 18:31:02] [cln_pack_clnt]   [Fn_bat_init] Entering Fn_bat_init 
+[36mINFO[0m[2024-09-18 18:31:34] [main] Program main starts                   
+[36mINFO[0m[2024-09-18 18:31:34] [main] [LoadPostgreSQLConfig] PostgreSQL configuration loaded successfully 
+[36mINFO[0m[2024-09-18 18:31:34] [main] [GetDatabaseConnection] Setting up the database connection 
+[36mINFO[0m[2024-09-18 18:31:34] [main] [GetDatabaseConnection] Database connection established successfully 
+[36mINFO[0m[2024-09-18 18:31:34] [main] [GetDB] Returning the Database instance 
+[36mINFO[0m[2024-09-18 18:31:34] [cln_pack_clnt]   [Fn_bat_init] Entering Fn_bat_init 
+[36mINFO[0m[2024-09-18 18:44:26] [main] Program main starts                   
+[36mINFO[0m[2024-09-18 18:44:26] [main] [LoadPostgreSQLConfig] PostgreSQL configuration loaded successfully 
+[36mINFO[0m[2024-09-18 18:44:26] [main] [GetDatabaseConnection] Setting up the database connection 
+[36mINFO[0m[2024-09-18 18:44:26] [main] [GetDatabaseConnection] Database connection established successfully 
+[36mINFO[0m[2024-09-18 18:44:26] [main] [GetDB] Returning the Database instance 
+[36mINFO[0m[2024-09-18 18:44:26] [cln_pack_clnt]   [Fn_bat_init] Entering Fn_bat_init 
+[36mINFO[0m[2024-09-18 18:44:26] [cln_pack_clnt]  [Fn_bat_init] Created Message Queue SuccessFully 
+[36mINFO[0m[2024-09-18 18:44:26] [cln_pack_clnt]  [Fn_bat_init] Copied pipe ID from args[3]: P1 
+[36mINFO[0m[2024-09-18 18:44:26] [cln_pack_clnt]  [Fn_bat_init] Executing query to fetch exchange code with pipe ID: P1 

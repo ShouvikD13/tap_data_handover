@@ -1,0 +1,699 @@
+
+
+DESC CLM_CLNT_MSTR     //1 
+ 
+ Name                                                              Null?    Type
+ ----------------------------------------------------------------- -------- --------------------------------------------
+ CLM_MTCH_ACCNT                                                    NOT NULL CHAR(10)
+ CLM_ORG_IND                                                                CHAR(1)
+ CLM_CLNT_TTL                                                      NOT NULL VARCHAR2(5)
+ CLM_CLNT_NM                                                       NOT NULL VARCHAR2(30)
+ CLM_ACTV_FRM                                                      NOT NULL DATE
+ CLM_ACTV_TO                                                                DATE
+ CLM_ALLCTD_AMT                                                             NUMBER(18,2)
+ CLM_PSEUDO_BNK_IND                                                         CHAR(1)
+ CLM_ACCT_STTS                                                     NOT NULL CHAR(1)
+ CLM_IBSL_CRDT_XTND                                                         NUMBER(12,2)
+ CLM_RSTRCT_LST_ID                                                          VARCHAR2(12)
+ CLM_ACCNT_CTGRY_ID                                                         NUMBER(1)
+ CLM_CLNT_CTGRY_ID                                                          NUMBER(3)
+ CLM_CIF_NMBR                                                               NUMBER(10)
+ CLM_BLK_TRD_AMT                                                            NUMBER(18,2)
+ CLM_GRSS_EXP_LMT                                                           NUMBER(18,2)
+ CLM_B2K_CD                                                                 CHAR(10)
+ CLM_TDS_RT                                                                 NUMBER(7,3)
+ CLM_MF_ALLCTD_AMT                                                          NUMBER(18,2)
+ CLM_GRSS_LMT_UTLZD                                                         NUMBER(18,2)
+ CLM_WAP_REQ                                                                CHAR(1)
+ CLM_INST_FLG                                                               CHAR(1)
+ CLM_WAP_PRECISION                                                          CHAR(1)
+ CLM_SLCTD_FLG                                                              CHAR(1)
+ CLM_FD_ALLCTD_AMT                                                          NUMBER(18,2)
+ CLM_CLNT_LVL                                                               CHAR(1)
+ CLM_MF_MAX_OPT                                                             CHAR(1)
+ CLM_MF_MAX_VAL                                                             NUMBER(18,2)
+ CLM_BTST_ALLWD_FLG                                                         CHAR(1)
+ CLM_BP_ID                                                                  VARCHAR2(8)
+ CLM_ALIAS_NAME                                                             VARCHAR2(8)
+ CLM_TRD_FLG                                                                CHAR(1)
+ CLM_PRM_BP_ID                                                              VARCHAR2(8)
+ CLM_LST_UPD_BY                                                             VARCHAR2(8)
+ CLM_LST_UPD_DT                                                             DATE
+ CLM_CLNT_CD                                                                VARCHAR2(12)
+ CLM_PLG_ALLWD_FLG                                                          CHAR(1)
+ CLM_NCD_CLNT_LVL                                                           CHAR(1)
+ CLM_BRKR_PLAN_CD                                                           NUMBER(10)
+ CLM_CP_CD                                                                  VARCHAR2(12)
+ CLM_CUST_LMT                                                               NUMBER(18,3)
+ CLM_CDX_CLNT_LVL                                                           CHAR(1)
+ CLM_PNNY_FLG                                                               CHAR(1)
+ CLM_FNO_FEATURES                                                           CHAR(6)
+ CLM_BRKR_CMPT_FLG                                                          VARCHAR2(1)
+ CLM_OPT_SCHM_CD                                                            VARCHAR2(8)
+ CLM_SPAN_ALLWD                                                             CHAR(1)
+ CLM_PREPAID_ALLWD                                                          CHAR(1)
+ CLM_BSESPAN_ALLWD                                                          CHAR(1)
+ CLM_LPC_PRCNTG                                                             NUMBER(5,2)
+ CLM_PRPD_CUST_TYP                                                          CHAR(1)
+ CLM_NCD_FLG                                                                CHAR(1)
+ CLM_IGAIN_FP_FLG                                                           VARCHAR2(1)
+ CLM_IGAIN_FP_SCHM_CD                                                       VARCHAR2(8)
+ CLM_IGAIN_OP_FLG                                                           VARCHAR2(1)
+ CLM_IGAIN_OP_SCHM_CD                                                       VARCHAR2(8)
+ CLM_BULLET_SCHM_FLG                                                        CHAR(1)
+ CLM_MF_TPA_ALLCTD_AMT                                                      NUMBER(18,2)
+ CLM_PLG_LSTPRCS_TM                                                         DATE
+ CLM_BULLET_SCHM_TRIAL_FLG                                                  CHAR(1)
+ CLM_ISEC_MRGN_AMT_NSE                                                      NUMBER(15,2)
+ CLM_ISEC_MRGN_AMT_BSE                                                      NUMBER(15,2)
+ CLM_SQRFMD_STTS                                                            CHAR(1)
+ CLM_SQRFMD_UPD_DT                                                          DATE
+ CLM_ESOP_ALLWD                                                             CHAR(1)
+ CLM_WALLET_AMT                                                             NUMBER(18,2)
+ CLM_IPO_ALLCTD_AMT                                                         NUMBER(18,2)
+ CLM_OP20_FLG                                                               VARCHAR2(1)
+ CLM_OP20_SCHM_CD                                                           VARCHAR2(8)
+ CLM_QRTLY_STLMNT_DT                                                        DATE
+ CLM_PLG_MODE                                                               CHAR(1)
+ CLM_MF_MODE_DT                                                             DATE
+ CLM_MF_DMAT_ACC                                                            VARCHAR2(16)
+ CLM_ISEC_T5_AMT                                                            NUMBER(15,2)
+ CLM_CDX_SPAN_ALLWD                                                         CHAR(1)
+ CLM_EXCPTN_MTF_CLIENT_LVL_LMT                                              NUMBER(18,2)
+ CLM_EXCPTN_MTF_CLNT_CHK                                                    CHAR(1)
+ CLM_MF_ALLCTD_AMT_DEP                                                      NUMBER(18,2)
+ CLM_EXCPTN_CNT_IND                                                         CHAR(1)
+ CLM_LOW_VOL_TRD_FLG                                                        CHAR(1)
+ CLM_FLT_BRKG_FLG                                                           VARCHAR2(1)
+ CLM_UPSTREAM_AMT                                                           NUMBER(16,2)
+ CLM_BRZE_FLG                                                               VARCHAR2(1)
+ 
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+15:50:13 EBATEST> desc ess_sgmnt_stck   //2
+ Name                                                              Null?    Type
+ ----------------------------------------------------------------- -------- --------------------------------------------
+ ESS_STCK_CD                                                       NOT NULL CHAR(6)
+ ESS_XCHNG_CD                                                      NOT NULL CHAR(3)
+ ESS_XCHNG_SGMNT_CD                                                NOT NULL CHAR(2)
+ ESS_XCHNG_SGMNT_STCK                                                       VARCHAR2(20)
+ ESS_PRMRY_XCHNG_IND                                                        CHAR(1)
+ ESS_XCHNG_SUB_SERIES                                                       CHAR(2)
+ 
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+15:49:51 EBATEST> desc exg_xchng_mstr    //3 
+ Name                                                              Null?    Type
+ ----------------------------------------------------------------- -------- --------------------------------------------
+ EXG_XCHNG_CD                                                      NOT NULL CHAR(3)
+ EXG_XCHNG_NM                                                      NOT NULL CHAR(30)
+ EXG_PR_OPNTM                                                      NOT NULL NUMBER(6)
+ EXG_OPN_TM                                                        NOT NULL NUMBER(4)
+ EXG_NXT_TRD_DT                                                    NOT NULL DATE
+ EXG_MTCH_BNK_ACCNT                                                NOT NULL VARCHAR2(12)
+ EXG_DPID_PL_ACCNT                                                 NOT NULL CHAR(8)
+ EXG_DPCLNT_PL_ACCNT                                                        CHAR(8)
+ EXG_CRRNT_STTS                                                             CHAR(1)
+ EXG_CLS_TM                                                                 NUMBER(4)
+ EXG_CCID                                                                   CHAR(8)
+ EXG_BRKR_ID                                                                CHAR(5)
+ EXG_MKT_TYP                                                                CHAR(1)
+ EXG_MIN_TRD_VAL                                                            NUMBER(12,2)
+ EXG_BRKR_STTS                                                              CHAR(1)
+ EXG_EXRC_RQ_OPN_TM                                                         NUMBER(4)
+ EXG_EXRC_RQ_CLS_TM                                                         NUMBER(4)
+ EXG_EXRC_MKT_STTS                                                          CHAR(1)
+ EXG_PYIN_PYOUT_BNK_ACCNT                                                   CHAR(12)
+ EXG_MG_MNT_BNK_ACCNT                                                       CHAR(12)
+ EXG_DSCLSD_PRCNTG                                                          NUMBER(6,2)
+ EXG_MAX_PSWD_VLD_DAYS                                                      NUMBER(4)
+ EXG_SETTLOR_ID                                                             CHAR(5)
+ EXG_SETTLOR_STTS                                                           CHAR(1)
+ EXG_GTD_VALID_DAYS                                                         NUMBER(2)
+ EXG_SEC_TM                                                                 DATE
+ EXG_PART_TM                                                                DATE
+ EXG_INST_TM                                                                DATE
+ EXG_IDX_TM                                                                 DATE
+ EXG_DEF_STLMNT_PD                                                          NUMBER(3)
+ EXG_WRN_PCNT                                                               NUMBER(6,2)
+ EXG_VOL_FRZ_PCNT                                                           NUMBER(6,2)
+ EXG_BRD_LOT_QTY                                                            NUMBER(10)
+ EXG_TCK_SZ                                                                 NUMBER(10)
+ EXG_GTC_DYS                                                                NUMBER(3)
+ EXG_DSCLSD_QTY_PCNT                                                        NUMBER(6,2)
+ EXG_TRD_SPLT_DT                                                            DATE
+ EXG_OFLN_NXT_TRD_DT                                                        DATE
+ EXG_OFLN_STTS                                                              CHAR(1)
+ EXG_BRKR_NAME                                                              VARCHAR2(25)
+ EXG_CTCL_ID                                                                VARCHAR2(15)
+ EXG_TM_DIFF                                                                NUMBER(20,10)
+ EXG_SETT_OFF_FLG                                                           CHAR(1)
+ EXG_DL_DWNLD_ALLWD                                                         CHAR(1)
+ EXG_EXTND_MRKT_STTS                                                        CHAR(1)
+ EXG_VER_NO                                                                 VARCHAR2(10)
+ EXG_PR_CLSTM                                                               NUMBER(6)
+ EXG_CLS_PRC_UPD_DT                                                         DATE
+ EXG_CDSL_DPID_PL_ACCNT                                                     CHAR(8)
+ EXG_CDSL_DPCLNT_PL_ACCNT                                                   CHAR(8)
+ EXG_SP_PR_OPNTM                                                            NUMBER(6)
+ EXG_SP_PR_CLSTM                                                            NUMBER(6)
+ EXG_SP_PR_MKT_STTS                                                         CHAR(1)
+ EXG_PRC_RNG_UPD_DT                                                         DATE
+ EXG_TMP_TRD_DT                                                             DATE
+ EXG_TMP_MKT_STTS                                                           CHAR(1)
+ EXG_MKT_MAX_VAL                                                            NUMBER(18,2)
+ EXG_LMT_MAX_VAL                                                            NUMBER(18,2)
+ EXG_MAX_MRGNPLS_XCPTN_ALLWD                                                NUMBER(5)
+ EXG_MAX_CUM_OPNORD_VAL                                                     NUMBER(18,2)
+ EXG_MCAS_MKT_STTS                                                          CHAR(1)
+ EXG_CLS_STTS                                                               CHAR(1)
+ EXG_NSDL_PL_DPID                                                           CHAR(8)
+ EXG_MAXORDR_SKIP_CNT                                                       NUMBER(5)
+ EXG_CMIT_FAIL_CNT                                                          NUMBER(5)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+15:45:19 EBATEST> desc fod_fo_ordr_dtls    //4
+ Name                                                              Null?    Type
+ ----------------------------------------------------------------- -------- --------------------------------------------
+ FOD_CLM_MTCH_ACCNT                                                NOT NULL CHAR(10)
+ FOD_CLNT_CTGRY                                                    NOT NULL NUMBER(3)
+ FOD_ORDR_RFRNC                                                    NOT NULL CHAR(18)
+ FOD_PIPE_ID                                                       NOT NULL CHAR(2)
+ FOD_XCHNG_CD                                                      NOT NULL CHAR(3)
+ FOD_PRDCT_TYP                                                     NOT NULL CHAR(1)
+ FOD_INDSTK                                                        NOT NULL CHAR(1)
+ FOD_UNDRLYNG                                                      NOT NULL CHAR(6)
+ FOD_EXPRY_DT                                                      NOT NULL DATE
+ FOD_EXER_TYP                                                      NOT NULL CHAR(1)
+ FOD_OPT_TYP                                                       NOT NULL CHAR(1)
+ FOD_STRK_PRC                                                      NOT NULL NUMBER(10)
+ FOD_ORDR_FLW                                                      NOT NULL CHAR(1)
+ FOD_LMT_MRKT_SL_FLG                                               NOT NULL CHAR(1)
+ FOD_DSCLSD_QTY                                                             NUMBER(8)
+ FOD_ORDR_TOT_QTY                                                  NOT NULL NUMBER(8)
+ FOD_LMT_RT                                                                 NUMBER(10)
+ FOD_STP_LSS_TGR                                                            NUMBER(10)
+ FOD_ORDR_TYPE                                                     NOT NULL CHAR(1)
+ FOD_ORDR_VALID_DT                                                          DATE
+ FOD_TRD_DT                                                        NOT NULL DATE
+ FOD_ORDR_STTS                                                     NOT NULL CHAR(1)
+ FOD_EXEC_QTY                                                               NUMBER(8)
+ FOD_CNCL_QTY                                                               NUMBER(8)
+ FOD_EXPRD_QTY                                                              NUMBER(8)
+ FOD_SPRD_ORDR_REF                                                          CHAR(18)
+ FOD_MDFCTN_CNTR                                                   NOT NULL NUMBER(3)
+ FOD_SETTLOR                                                                CHAR(12)
+ FOD_ACK_NMBR                                                               CHAR(20)
+ FOD_SPL_FLAG                                                               CHAR(1)
+ FOD_ORD_ACK_TM                                                             DATE
+ FOD_LST_RQST_ACK_TM                                                        DATE
+ FOD_PRO_CLI_IND                                                            CHAR(1)
+ FOD_EXEC_QTY_DAY                                                           NUMBER(8)
+ FOD_REMARKS                                                                VARCHAR2(256)
+ FOD_CHANNEL                                                                VARCHAR2(3)
+ FOD_BP_ID                                                                  VARCHAR2(8)
+ FOD_CTCL_ID                                                                VARCHAR2(16)
+ FOD_USR_ID                                                                 VARCHAR2(15)
+ FOD_MRKT_TYP                                                               CHAR(1)
+ FOD_CSE_ID                                                                 NUMBER(6)
+ FOD_IS_FLG                                                                 CHAR(1)
+ FOD_SPN_FLG                                                                CHAR(1)
+ FOD_SLTP_ORDR_RFRNC                                                        CHAR(18)
+ FOD_AMT_BLCKD                                                              NUMBER(24,2)
+ FOD_LSS_AMT_BLCKD                                                          NUMBER(24,2)
+ FOD_FC_FLAG                                                                CHAR(1)
+ FOD_DIFF_AMT_BLCKD                                                         NUMBER(24,2)
+ FOD_DIFF_LSS_AMT_BLCKD                                                     NUMBER(24,2)
+ FOD_TRD_VAL                                                                NUMBER(24,2)
+ FOD_TRD_BRKG                                                               NUMBER(12)
+ FOD_CNTRCTNT_NMBR                                                          VARCHAR2(25)
+ FOD_SOURCE_FLG                                                             CHAR(1)
+ FOD_EOS_FLG                                                                CHAR(1)
+ FOD_PRCIMPV_FLG                                                            CHAR(1)
+ FOD_TRAIL_AMT                                                              NUMBER(12)
+ FOD_LMT_OFFSET                                                             NUMBER(12)
+ FOD_PAN_NO                                                                 VARCHAR2(10)
+ FOD_SETLMNT_FLG                                                            CHAR(1)
+ FOD_LST_ACT_REF                                                            CHAR(21)
+ FOD_SROLL_DIFF_AMT                                                         NUMBER(24,2)
+ FOD_SROLL_LSS_AMT                                                          NUMBER(24,2)
+ FOD_ESP_ID                                                                 VARCHAR2(50)
+ FOD_SLTP_MRGN                                                              NUMBER(24,2)
+ FOD_SLTP_PL                                                                NUMBER(24,2)
+ FOD_SLTP_SEBI_MRGN                                                         NUMBER(24,2)
+ FOD_OPLUS_PREMIUM                                                          NUMBER(24,2)
+ FOD_SPAN_MRGN                                                              NUMBER(24,2)
+ FOD_EXPR_MRGN                                                              NUMBER(24,2)
+ FOD_1CLICK_FLG                                                             CHAR(1)
+ FOD_1CLICK_PRTFL_ID                                                        VARCHAR2(10)
+ FOD_ALGO_ID                                                                VARCHAR2(50)
+ FOD_APIREMARKS                                                             VARCHAR2(50)
+ FOD_SQROFF_TM                                                              NUMBER(8)
+ FOD_UCC_CD                                                                 VARCHAR2(12)
+ FOD_SEM_VAL                                                                VARCHAR2(20)
+ FOD_CP_CD                                                                  VARCHAR2(12)
+ FOD_TOKEN_NO                                                               NUMBER(10)
+ FOD_CUST_TYP                                                               VARCHAR2(5)
+ FOD_EXGUCC_CD                                                              VARCHAR2(12)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+15:38:33 EBATEST> desc fsp_fo_seq_plcd   //5
+ Name                                                              Null?    Type
+ ----------------------------------------------------------------- -------- --------------------------------------------
+ FSP_TRD_DT                                                                 DATE
+ FSP_PIPE_ID                                                                CHAR(2)
+ FSP_SEQ_NUM                                                                NUMBER(8)
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+15:38:33 EBATEST> desc FTM_FO_TRD_MSG    //6
+ Name                                                              Null?    Type
+ ----------------------------------------------------------------- -------- --------------------------------------------
+ FTM_XCHNG_CD                                                               CHAR(3)
+ FTM_BRKR_CD                                                                CHAR(5)
+ FTM_MSG_ID                                                                 CHAR(1)
+ FTM_MSG                                                                    VARCHAR2(255)
+ FTM_TM                                                                     DATE
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+15:45:49 EBATEST> desc ftq_fo_trd_qt  //7 
+ Name                                                              Null?    Type
+ ----------------------------------------------------------------- -------- --------------------------------------------
+ FTQ_XCHNG_CD                                                               CHAR(3)
+ FTQ_PRDCT_TYP                                                              CHAR(1)
+ FTQ_INDSTK                                                                 CHAR(1)
+ FTQ_UNDRLYNG                                                               CHAR(6)
+ FTQ_EXPRY_DT                                                               DATE
+ FTQ_EXER_TYP                                                               CHAR(1)
+ FTQ_OPT_TYP                                                                CHAR(1)
+ FTQ_STRK_PRC                                                               NUMBER(10)
+ FTQ_CLS_PRC                                                                NUMBER(10)
+ FTQ_OPN_PRC                                                                NUMBER(10)
+ FTQ_HGH_PRC                                                                NUMBER(10)
+ FTQ_LOW_PRC                                                                NUMBER(10)
+ FTQ_PRVS_CLS_PRC                                                           NUMBER(10)
+ FTQ_CHNG_PRVS_CLS                                                          NUMBER(10)
+ FTQ_INDCTR                                                                 CHAR(1)
+ FTQ_HGH_PRC_RNG                                                            NUMBER(10)
+ FTQ_LOW_PRC_RNG                                                            NUMBER(10)
+ FTQ_TOT_QTY_TRDD                                                           NUMBER(10)
+ FTQ_TOT_VAL_TRDD                                                           NUMBER(26,2)
+ FTQ_LST_TRD_PRC                                                            NUMBER(10)
+ FTQ_LST_TRD_TM                                                             DATE
+ FTQ_LST_TRD_QTY                                                            NUMBER(10)
+ FTQ_AVRG_TRD_PRC                                                           NUMBER(10)
+ FTQ_BST1_BID_PRC                                                           NUMBER(10)
+ FTQ_BST1_BID_QTY                                                           NUMBER(10)
+ FTQ_BST2_BID_PRC                                                           NUMBER(10)
+ FTQ_BST2_BID_QTY                                                           NUMBER(10)
+ FTQ_BST3_BID_PRC                                                           NUMBER(10)
+ FTQ_BST3_BID_QTY                                                           NUMBER(10)
+ FTQ_BST4_BID_PRC                                                           NUMBER(10)
+ FTQ_BST4_BID_QTY                                                           NUMBER(10)
+ FTQ_BST5_BID_PRC                                                           NUMBER(10)
+ FTQ_BST5_BID_QTY                                                           NUMBER(10)
+ FTQ_BST1_OFFR_PRC                                                          NUMBER(10)
+ FTQ_BST1_OFFR_QTY                                                          NUMBER(10)
+ FTQ_BST2_OFFR_PRC                                                          NUMBER(10)
+ FTQ_BST2_OFFR_QTY                                                          NUMBER(10)
+ FTQ_BST3_OFFR_PRC                                                          NUMBER(10)
+ FTQ_BST3_OFFR_QTY                                                          NUMBER(10)
+ FTQ_BST4_OFFR_PRC                                                          NUMBER(10)
+ FTQ_BST4_OFFR_QTY                                                          NUMBER(10)
+ FTQ_BST5_OFFR_PRC                                                          NUMBER(10)
+ FTQ_BST5_OFFR_QTY                                                          NUMBER(10)
+ FTQ_TOT_BID_QTY                                                            NUMBER(10)
+ FTQ_TOT_OFFR_QTY                                                           NUMBER(10)
+ FTQ_PRMTD_TO_TRD                                                           NUMBER(2)
+ FTQ_STTS                                                                   NUMBER(2)
+ FTQ_MIN_LOT_QTY                                                            NUMBER(10)
+ FTQ_BOARD_LOT_QTY                                                          NUMBER(10)
+ FTQ_TCK_SZ                                                                 NUMBER(5)
+ FTQ_RCRD_DT                                                                DATE
+ FTQ_ND_STRT_DT                                                             DATE
+ FTQ_ND_END_DT                                                              DATE
+ FTQ_BK_CLS_STRT_DT                                                         DATE
+ FTQ_BK_CLS_END_DT                                                          DATE
+ FTQ_SETL_SETLMNT_NO                                                        NUMBER(9)
+ FTQ_CRNT_OI                                                                NUMBER(24,2)
+ FTQ_CHNG_OI                                                                NUMBER(12,2)
+ FTQ_OI_INDCTR                                                              CHAR(4)
+ FTQ_OI_HIGH                                                                NUMBER(12,2)
+ FTQ_OI_LOW                                                                 NUMBER(12,2)
+ FTQ_BASE_PRC                                                               NUMBER(10)
+ FTQ_BASE_PRC_UPD_DT                                                        DATE
+ FTQ_CLS_OI                                                                 NUMBER(12,2)
+ FTQ_CLS_IV                                                                 NUMBER(12,2)
+ FTQ_CLS_TRD_QTY                                                            NUMBER(10)
+ FTQ_ROLL_OVER                                                              NUMBER(12,2)
+ FTQ_RLVR_PER                                                               NUMBER(12,2)
+ FTQ_RLVR_OPN_CNTRCTS                                                       NUMBER(12,2)
+ FTQ_ATS_CLS_PRC                                                            NUMBER(10)
+ FTQ_HGH_TRD_EXEC_RNG                                                       NUMBER(10)
+ FTQ_LOW_TRD_EXEC_RNG                                                       NUMBER(10)
+ FTQ_MULTPLR                                                                NUMBER(5)
+ FTQ_ACT_STTS                                                               CHAR(1)
+ FTQ_QT_TRDNG_FLG                                                           CHAR(1)
+ FTQ_TOKEN_NO                                                               NUMBER(10)
+ FTQ_CA_LVL                                                                 NUMBER(8)
+ FTQ_CLS_PRC_DT                                                             DATE
+ FTQ_CNTRCT_TAG                                                             CHAR(1)
+ FTQ_FP_CNTRCT_TAG                                                          CHAR(1)
+ FTQ_MRKT_TYP                                                               CHAR(1)
+ FTQ_FP_QT_TRDNG_FLG                                                        CHAR(1)
+ FTQ_DS_QT_TRDNG_FLG                                                        CHAR(1)
+ FTQ_SLTP_FP_QT_TRDNG_FLG                                                   CHAR(1)
+ FTQ_ROLLOVER_FLAG                                                          CHAR(1)
+ FTQ_NRML_SERIES_CD                                                         VARCHAR2(20)
+ FTQ_SPRD_SERIES_CD                                                         VARCHAR2(20)
+ FTQ_SPRD_TOKEN_NO                                                          NUMBER(19)
+ FTQ_EBA_CNTRCT_ID                                                          NUMBER(10)
+ FTQ_TOKEN_UPD_DT                                                           DATE
+ FTQ_TRAIL_FLG                                                              CHAR(1)
+ FTQ_SETLMNT_FLG                                                            CHAR(1)
+ FTQ_DLVRY_POS_ALLWD                                                        CHAR(1)
+ FTQ_OPLOW_PRICEDIFF                                                        NUMBER(10)
+ FTQ_OPHIGH_PRICEDIFF                                                       NUMBER(10)
+ FTQ_ELIGIBILITY                                                            CHAR(1)
+ FTQ_EXPRY_DT2                                                              DATE
+ FTQ_SPD_TOKEN2                                                             NUMBER(10)
+ FTQ_ROLLOVER_SPRD_ALLWD_FLG                                                CHAR(1)
+ FTQ_PRVS_OI                                                                NUMBER(12,2)
+ FTQ_FRESH_OI                                                      NOT NULL NUMBER(12,2)
+ FTQ_SPN_PER_LOT                                                            NUMBER(24,2)
+ FTQ_OTM_FLG                                                                CHAR(1)
+ FTQ_SPN_PER_LOT_B                                                          NUMBER(24,2)
+ FTQ_BUY_ALLWD                                                              CHAR(1)
+ FTQ_SELL_ALLWD                                                             CHAR(1)
+ FTQ_MRKT_ORDR_FLG                                                          CHAR(1)
+ FTQ_PRD_ID                                                                 NUMBER(10)
+ FTQ_QT_UPDDT                                                               DATE
+ FTQ_UPD_DELAY_INTERVAL                                                     NUMBER(3)
+ FTQ_LNGOPT_FLG                                                             CHAR(1)
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+15:46:16 EBATEST> desc fxb_fo_xchng_book     //8
+ Name                                                              Null?    Type
+ ----------------------------------------------------------------- -------- --------------------------------------------
+ FXB_XCHNG_CD                                                      NOT NULL CHAR(3)
+ FXB_ORDR_RFRNC                                                    NOT NULL CHAR(18)
+ FXB_PIPE_ID                                                       NOT NULL CHAR(2)
+ FXB_MOD_TRD_DT                                                    NOT NULL DATE
+ FXB_ORDR_SQNC                                                     NOT NULL NUMBER(8)
+ FXB_LMT_MRKT_SL_FLG                                                        CHAR(1)
+ FXB_DSCLSD_QTY                                                             NUMBER(8)
+ FXB_ORDR_TOT_QTY                                                           NUMBER(8)
+ FXB_LMT_RT                                                                 NUMBER(10)
+ FXB_STP_LSS_TGR                                                            NUMBER(10)
+ FXB_MDFCTN_CNTR                                                            NUMBER(3)
+ FXB_ORDR_VALID_DT                                                          DATE
+ FXB_ORDR_TYPE                                                              CHAR(1)
+ FXB_SPRD_ORD_IND                                                           CHAR(1)
+ FXB_RQST_TYP                                                               CHAR(1)
+ FXB_QUOTE                                                                  NUMBER(10)
+ FXB_QT_TM                                                                  DATE
+ FXB_RQST_TM                                                                DATE
+ FXB_FRWD_TM                                                                DATE
+ FXB_PLCD_STTS                                                              CHAR(1)
+ FXB_RMS_PRCSD_FLG                                                          CHAR(1)
+ FXB_ORS_MSG_TYP                                                            NUMBER(10)
+ FXB_ACK_TM                                                                 DATE
+ FXB_XCHNG_RMRKS                                                            VARCHAR2(1000)
+ FXB_EX_ORDR_TYP                                                            CHAR(1)
+ FXB_XCHNG_CNCLD_QTY                                                        NUMBER(8)
+ FXB_SPL_FLAG                                                               CHAR(1)
+ FXB_JIFFY                                                                  NUMBER(24,2)
+ FXB_MRKT_TYP                                                               CHAR(1)
+ FXB_STREAM_NO                                                              NUMBER(8)
+ FXB_SPN_FLG                                                                CHAR(1)
+ FXB_IP                                                                     VARCHAR2(45)
+ FXB_INIT_SLTP_RT                                                           NUMBER(12)
+ FXB_INIT_LMT_RT                                                            NUMBER(12)
+ FXB_LTP_RT                                                                 NUMBER(12)
+ FXB_INCRMNT_PRC                                                            NUMBER(12)
+ FXB_TRAIL_AMT                                                              NUMBER(12)
+ FXB_LMT_OFFSET                                                             NUMBER(12)
+ FXB_TRL_UPD_COND_VAL                                                       NUMBER(12)
+ FXB_PRCIMPV_FLG                                                            CHAR(1)
+ FXB_LST_ACT_REF                                                            CHAR(21)
+ FXB_SSSN_ID                                                                NUMBER(10)
+ FXB_INSRT_DT                                                               DATE
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+15:55:00 EBATEST> desc IAI_INFO_ACCOUNT_INFO    //9
+ Name                                                              Null?    Type
+ ----------------------------------------------------------------- -------- --------------------------------------------
+ IAI_SERIAL_NO                                                     NOT NULL NUMBER(10)
+ IAI_TYPE                                                          NOT NULL VARCHAR2(50)
+ IAI_BNK_ACCOUNT_NO                                                         VARCHAR2(20)
+ IAI_BNK_CUSTOMER_ID                                                        VARCHAR2(10)
+ IAI_BNK_BRANCH_CD                                                          VARCHAR2(30)
+ IAI_BNK_ACCOUNT_TYPE                                                       VARCHAR2(3)
+ IAI_BNK_ACCOUNT_EX_NEW_FLG                                                 CHAR(1)
+ IAI_BNK_ACCOUNT_OPEN_DT                                                    DATE
+ IAI_BNK_ACCOUNT_STATUS                                                     NUMBER(2)
+ IAI_MATCH_ACCOUNT_NO                                                       VARCHAR2(10)
+ IAI_MATCH_ACCOUNT_OPEN_DT                                                  DATE
+ IAI_MATCH_ACCOUNT_STATUS                                                   NUMBER(2)
+ IAI_ENTERED_BY                                                             VARCHAR2(100)
+ IAI_ENTRY_DT                                                               DATE
+ IAI_MODIFIED_BY                                                            VARCHAR2(100)
+ IAI_MODIFY_DT                                                              DATE
+ IAI_EBA_UPLOAD_FLG                                                         VARCHAR2(1)
+ IAI_EBA_UPLOAD_DT                                                          DATE
+ IAI_IKIT_FLG                                                               CHAR(1)
+ IAI_XCHANGE_NEXT_STATUS                                                    NUMBER(2)
+ IAI_CP_CODE                                                                VARCHAR2(12)
+ IAI_CPCODE_STATUS                                                          NUMBER(2)
+ IAI_ATS_CLASS_STATUS                                                       NUMBER(2)
+ IAI_CDX_CLASS_STATUS                                                       NUMBER(2)
+ IAI_UCCTOATS_STATUS                                                        NUMBER(2)
+ IAI_UCCTOATS_DT                                                            DATE
+ IAI_CLASS_DOWNLOAD_RUN_NO                                                  NUMBER(10)
+ IAI_MODIFY_DT_RUN_NO                                                       DATE
+ IAI_BNK_ACCOUNT_FLAG                                                       VARCHAR2(10)
+ IAI_COMM_CLASS_STATUS                                                      NUMBER(2)
+ IAI_IFSC_CD                                                                VARCHAR2(25)
+ IAI_BANK_TYPE                                                              VARCHAR2(100)
+ IAI_ENABLE_FOR_DWLD                                                        VARCHAR2(1)
+ IAI_MF_UCC_BNK_SLOT_NO                                                     NUMBER(2)
+ IAI_BNK_CHANGE_DT                                                          DATE
+ IAI_BNK_ACCOUNT_FLAG_CHANGE_DT                                             DATE
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+15:54:36 EBATEST> desc ICD_INFO_CLIENT_DTLS   //10
+ Name                                                              Null?    Type
+ ----------------------------------------------------------------- -------- --------------------------------------------
+ ICD_SERIAL_NO                                                     NOT NULL NUMBER(10)
+ ICD_CUST_TYPE                                                              VARCHAR2(5)
+ ICD_INWARD_DATE                                                            DATE
+ ICD_SCHEME_TYP                                                             VARCHAR2(30)
+ ICD_INWARD_STATUS                                                          VARCHAR2(3)
+ ICD_INWARD_ACCP_DT                                                         DATE
+ ICD_INWARD_AGRMNT_DATE                                                     DATE
+ ICD_AGENT_CD                                                               VARCHAR2(10)
+ ICD_SUB_AGENT_CD                                                           VARCHAR2(10)
+ ICD_PRODUCT_CD                                                             VARCHAR2(50)
+ ICD_ICICI_EMP_NO                                                           VARCHAR2(10)
+ ICD_TOS_CD                                                                 VARCHAR2(50)
+ ICD_ARN_NO                                                                 VARCHAR2(10)
+ ICD_RECEIPT_DATE                                                           DATE
+ ICD_FORM_VERSION                                                           VARCHAR2(5)
+ ICD_USER_ID                                                                VARCHAR2(8)
+ ICD_WEB_USER_ID_NOT_IN_USE                                                 VARCHAR2(8)
+ ICD_OCC_CD                                                                 VARCHAR2(50)
+ ICD_MARITAL_STATUS                                                         CHAR(1)
+ ICD_EDUCATION_CD                                                           VARCHAR2(50)
+ ICD_INCOME_CAT_CD                                                          VARCHAR2(50)
+ ICD_HOLDING_RANGE_CD                                                       VARCHAR2(50)
+ ICD_APP_CONSTI_CD                                                          VARCHAR2(50)
+ ICD_CUST_NRI_FLG                                                           CHAR(1)
+ ICD_FORM_60_FLG                                                            CHAR(1)
+ ICD_PAN_APPL                                                               VARCHAR2(50)
+ ICD_PAN_REASON                                                             VARCHAR2(100)
+ ICD_TAX_ASSESEE_FLG                                                        CHAR(1)
+ ICD_NRI_EINVEST_OPT                                                        CHAR(1)
+ ICD_FNO_AGRMNT_FLG                                                         CHAR(1)
+ ICD_FNO_AGRMNT_VER_NO                                                      VARCHAR2(5)
+ ICD_FNO_AGRMNT_DT                                                          DATE
+ ICD_EFS_CD                                                                 VARCHAR2(4)
+ ICD_EFS_FR_CD                                                              VARCHAR2(8)
+ ICD_DMA                                                                    VARCHAR2(9)
+ ICD_VERIFIED_BY                                                            VARCHAR2(30)
+ ICD_VERIFICATION_DT                                                        DATE
+ ICD_VERIFY_STATUS                                                          CHAR(1)
+ ICD_BNK_REJ_RMKS                                                           VARCHAR2(200)
+ ICD_PRINT_FLG                                                              CHAR(1)
+ ICD_PRINT_DT                                                               DATE
+ ICD_ACK_FLG                                                                CHAR(1)
+ ICD_ACK_DT                                                                 DATE
+ ICD_SEND_MAIL_FLG                                                          NUMBER(2)
+ ICD_REM_DESC                                                               VARCHAR2(100)
+ ICD_EBA_UPLOAD_FLG                                                         CHAR(1)
+ ICD_EBA_UPLOAD_DT                                                          DATE
+ ICD_LAS_FLG                                                                CHAR(1)
+ ICD_LAS_CUST_TYPE                                                          CHAR(1)
+ ICD_LAS_NO                                                                 VARCHAR2(16)
+ ICD_MATCH_CLNT_CAT                                                         VARCHAR2(10)
+ ICD_CLNT_CD                                                                VARCHAR2(12)
+ ICD_ENTERED_BY                                                             VARCHAR2(100)
+ ICD_ENTRY_DT                                                               DATE
+ ICD_MODIFIED_BY                                                            VARCHAR2(100)
+ ICD_MODIFY_DT                                                              DATE
+ ICD_REJ_MAIL_RMKS                                                          VARCHAR2(100)
+ ICD_PRINT_BY                                                               VARCHAR2(15)
+ ICD_APPLIED_CPCODE                                                         CHAR(1)
+ ICD_ALLOWED_OTP                                                            CHAR(1)
+ ICD_OTP_STATUS                                                             NUMBER(2)
+ ICD_APPLIED_CPCODE_DATE                                                    DATE
+ ICD_APPL_EXCHANGE_DATE                                                     DATE
+ ICD_BRPM_CODE                                                              NUMBER
+ ICD_DEFAULT_AGRMNT_FLG                                                     CHAR(1)
+ ICD_PAN_NO                                                                 VARCHAR2(30)
+ ICD_ATS_STATUS                                                             CHAR(1)
+ ICD_CAT_EMP_CODE                                                           VARCHAR2(10)
+ ICD_RM_CODE                                                                VARCHAR2(10)
+ ICD_FILLER_CODE                                                            VARCHAR2(10)
+ ICD_SENT_TO_CAT                                                            CHAR(1)
+ ICD_WKIT_ACK_FLG                                                           CHAR(1)
+ ICD_WKIT_FLG                                                               CHAR(1)
+ ICD_IKIT_TYPE                                                              VARCHAR2(2)
+ ICD_WKIT_DOC_FLG                                                           CHAR(1)
+ ICD_NRI_CATEGORY_TYPE                                                      VARCHAR2(10)
+ ICD_NRI_BASE_SCHEME                                                        NUMBER(2)
+ ICD_NRI_CURRENT_SCHEME                                                     NUMBER(2)
+ ICD_NON_ISEC_AGENT_CODE                                                    VARCHAR2(10)
+ ICD_SCANNED_AOF_DIR                                                        VARCHAR2(500)
+ ICD_SCANNED_AOF_VERTUAL_DIR                                                VARCHAR2(50)
+ ICD_INW_CENTER_CD                                                          VARCHAR2(10)
+ ICD_ELOCKER_FLG                                                            CHAR(1)
+ ICD_BILLPAYMENT_FLG                                                        CHAR(1)
+ ICD_PARTB_NO                                                               VARCHAR2(10)
+ ICD_MFCUSTODIAN_FLG                                                        CHAR(1)
+ ICD_MFCUSTODIAN_CLNT_TYPE                                                  VARCHAR2(60)
+ ICD_CLNT_CD_ATS                                                            VARCHAR2(12)
+ ICD_FORM_VER_NO                                                            NUMBER(5)
+ ICD_AOF_UPLOAD_DT                                                          DATE
+ ICD_RSK_CTGRY                                                              VARCHAR2(4)
+ ICD_ATS_BRANCH_CD                                                          VARCHAR2(20)
+ ICD_HNI_CUST_TYPE                                                          VARCHAR2(10)
+ ICD_MILES_DWN_STATUS                                                       NUMBER(2)
+ ICD_PREPAID_SCH_FLG                                                        CHAR(1)
+ ICD_CUST_SUB_TYPE                                                          VARCHAR2(50)
+ ICD_PRIORITY_CUST_FLG                                                      VARCHAR2(1)
+ ICD_LEAD_NO                                                                VARCHAR2(20)
+ ICD_PWM_COMM_PERCENT                                                       NUMBER(4,2)
+ ICD_PRIORITY_TAG_THRU                                                      VARCHAR2(100)
+ ICD_MAIL_CUST_ID                                                           VARCHAR2(50)
+ ICD_LAS_IPO_FUNDING_FLG                                                    CHAR(1)
+ ICD_CUST_LAS_PAN_NO                                                        VARCHAR2(30)
+ ICD_GSTIN                                                                  VARCHAR2(20)
+ ICD_GST_SPCL_EXEMPTION                                                     VARCHAR2(4)
+ ICD_GST_REGISTERED                                                         VARCHAR2(2)
+ ICD_CUST_TYPE_CHNG_DT                                                      DATE
+ ICD_BANK_TYPE                                                              VARCHAR2(50)
+ ICD_SETTLEMENT_TYPE                                                        VARCHAR2(50)
+ ICD_POA_PEND                                                               CHAR(1)
+ ICD_BRKG_MDL_FLG                                                           CHAR(1)
+ ICD_OLN_IMG_FINAL_SUCCESS                                                  VARCHAR2(1)
+ ICD_PAL_STATUS                                                             VARCHAR2(5)
+ ICD_DISC_BROK_ALLWD                                                        VARCHAR2(1)
+ ICD_PAL_DWLD_REQ                                                           VARCHAR2(5)
+ ICD_CUSTOMER_SOURCED_FROM                                                  VARCHAR2(15)
+ ICD_DEMAT_MANDATE_CATGRY                                                   VARCHAR2(10)
+ ICD_DEMAT_MANDATE_CATGRY_DT                                                DATE
+ ICD_TRD_FNO_PREFERNCE                                                      VARCHAR2(1)
+ ICD_TRD_EQUITY_PREFERNCE                                                   VARCHAR2(1)
+ ICD_TRD_MCX_PREFERNCE                                                      VARCHAR2(1)
+ ICD_TRD_CURRENCY_PREFERNCE                                                 VARCHAR2(1)
+ ICD_ASBA_CONFIRMATION_FLAG                                                 VARCHAR2(1)
+ ICD_ASBA_CONFIRMATION_DT                                                   DATE
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+15:46:39 EBATEST> desc opm_ord_pipe_mstr   //11
+ Name                                                              Null?    Type
+ ----------------------------------------------------------------- -------- --------------------------------------------
+ OPM_PIPE_ID                                                       NOT NULL CHAR(2)
+ OPM_PIPE_DESC                                                              VARCHAR2(256)
+ OPM_XCHNG_CD                                                      NOT NULL CHAR(3)
+ OPM_PIPE_CTGRY_ID                                                 NOT NULL CHAR(2)
+ OPM_MKT_ALLWD                                                              CHAR(1)
+ OPM_USER_ID                                                                NUMBER(8)
+ OPM_LST_PSWD_CHG_DT                                                        DATE
+ OPM_MAX_PND_ORD                                                            NUMBER(5)
+ OPM_BRNCH_ID                                                               NUMBER(8)
+ OPM_PMP_STTS                                                               NUMBER(1)
+ OPM_ADM_STTS                                                               NUMBER(1)
+ OPM_TRDR_ID                                                                CHAR(5)
+ OPM_CTCL_PRODUCT                                                           VARCHAR2(20)
+ OPM_EXG_PWD                                                                VARCHAR2(12)
+ OPM_NEW_EXG_PWD                                                            VARCHAR2(12)
+ OPM_REMARK                                                                 VARCHAR2(512)
+ OPM_WS_NO                                                                  VARCHAR2(10)
+ OPM_DWNLD_TM                                                               DATE
+ OPM_USR_TYP                                                                CHAR(1)
+ OPM_LOGIN_STTS                                                             CHAR(1)
+ OPM_STAT_FLAG                                                              CHAR(1)
+ OPM_PIPE_CATEGARY                                                          CHAR(1)
+ OPM_STREAM_NO                                                              NUMBER(8)
+ OPM_PRE_OPN_BRKR_STTS                                                      CHAR(1)
+ OPM_PREOPN_MKT_ALLWD                                                       CHAR(1)
+ OPM_SP_PRE_OPN_BRKR_STTS                                                   CHAR(1)
+ OPM_IPO_LOGIN_ID                                                           CHAR(25)
+ OPM_IPO_MEMBER_CD                                                          CHAR(10)
+ OPM_IPO_IBBS_ID                                                            CHAR(10)
+ OPM_IPO_BRNCH_CD                                                           CHAR(10)
+ OPM_IPO_SSSN_ID                                                            VARCHAR2(50)
+ OPM_IPO_LOGIN_TYP                                                          CHAR(1)
+ OPM_IPO_IL_VER                                                             VARCHAR2(10)
+ OPM_RCNNCT_TM                                                              DATE
+ OPM_RCNNCT_COUNT                                                           NUMBER(1)
+ OPM_CONNCTED_ON_SERVER                                                     CHAR(1)
+ OPM_NSE_IPO_HASH_PWD                                                       VARCHAR2(100)
+ OPM_LOG_TM                                                                 NUMBER(24)
+ OPM_XCHNG_CONNECTIVITY                                                     CHAR(1)
+ OPM_DWNLD_LOGIN_STTS                                                       CHAR(1)
+ OPM_SNDR_COMPID                                                            CHAR(33)
+ OPM_TRGET_COMPID                                                           CHAR(33)
+ OPM_LOGIN_IDNTFR                                                           CHAR(12)
+ OPM_WEBOFS_ACCESS_TOKEN                                                    VARCHAR2(1500)
+ OPM_WEBOFS_TOKEN_ISS_TM                                                    DATE
+ OPM_WEBOFS_TOKEN_EXPR_TM                                                   DATE
+ OPM_WEBOFS_TOKEN_EXPR_EPOCH                                                NUMBER(15)
+ OPM_ORDR_SKIPPD                                                            NUMBER(5)
+ OPM_PWD_FLG                                                                CHAR(1)
+ OPM_ORD_UPDT_FLG                                                           CHAR(1)
+ OPM_TCONF_BATCH                                                            CHAR(1)
+ OPM_DLOCK_COUNTER                                                          NUMBER(10)
+ OPM_REATTEMPT_CNTR                                                         NUMBER
+ OPM_TCONF_BATCH_MG                                                         CHAR(1)
+ OPM_TCONF_BATCH_EM                                                         CHAR(1)
+ OPM_TCONF_BATCH_CB                                                         CHAR(1)
+ OPM_PARALLEL_SEQ_CNT                                                       NUMBER(3)
+ OPM_TCONF_BATCH_BT                                                         CHAR(1)
+ OPM_TCONF_BATCH_SP                                                         CHAR(1)
+ OPM_ENABLE_PARALLEL                                                        CHAR(1)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+15:47:29 EBATEST> desc sem_stck_map    //12
+ Name                                                              Null?    Type
+ ----------------------------------------------------------------- -------- --------------------------------------------
+ SEM_STCK_CD                                                       NOT NULL CHAR(6)
+ SEM_ENTTY                                                         NOT NULL NUMBER(3)
+ SEM_MAP_VL                                                        NOT NULL VARCHAR2(20)
+ SEM_XCHNG_SERIES                                                           VARCHAR2(2)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
